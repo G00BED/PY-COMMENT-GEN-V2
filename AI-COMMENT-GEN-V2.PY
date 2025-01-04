@@ -3,7 +3,7 @@ import openai
 #Returns text from OpenAI based off of prompt
 def AiGeneration(): 
   # API key
-  openai.api_key = "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"
+  openai.api_key = "ENTER YOUR OPENAI API KEY HERE"
   
   #Model Engine
   model_engine = "gpt-3.5-turbo-instruct"
@@ -20,6 +20,7 @@ def AiGeneration():
       n=1,
       stop=None,
   )
+
   # Print comment
   comment = response.choices[0].text.strip()
   return comment
