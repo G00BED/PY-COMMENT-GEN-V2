@@ -8,8 +8,8 @@ def AiGeneration():
   #Model Engine
   model_engine = "gpt-3.5-turbo-instruct"
   prompt = "Generate a very creative and random comment. It can be mean, funny, gross, weird, extreme or scary. The comment would take place in a video game."
-  temperature = 1
-  max_tokens = 100
+  temperature = 1.7
+  max_tokens = 50
   
   # Generate comment using the OpenAI API
   response = openai.Completion.create(
